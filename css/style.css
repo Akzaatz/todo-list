@@ -1,0 +1,48 @@
+* {
+  font-family: "Raleway";
+  color: black;
+}
+
+body {
+  background: rgb(3, 36, 44);
+}
+
+.main-conatainer {
+  display: flex;
+}
+
+h1 {
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: aliceblue;
+  height: 25px;
+  background: rgb(29, 71, 29);
+  border-radius: 5px;
+}
+
+input {
+  height: 10px;
+  width: 30%;
+  padding: 5px;
+}
+input::placeholder {
+  font-size: 0.8rem;
+  color: rgb(55, 6, 230);
+}
+
+li {
+  color: white;
+}
+
+li button {
+  margin: 10px 10px 0;
+}
