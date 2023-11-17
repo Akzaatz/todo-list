@@ -6,7 +6,7 @@ const url = document.getElementById("url");
 const load = document.getElementById("load");
 
 //récupation des taches déjà existantes
-const tasks = ["Terminer le P5", "Démarrer leP6"];
+const tasks = ["Coder une nouvelle Appli", "Démarrer leP6"];
 
 //ajooute des tasks au DOM avec un bouton de suppresiion des events
 function taskToDom(task) {
@@ -28,9 +28,14 @@ function taskToDom(task) {
 }
 
 //Ajout de nouvelles taches à la liste à puces
-for (let i = 0; i < tasks.length; i++) {
-  taskToDom(tasks[i]);
-}
+
+tasks.forEach((task) => taskToDom(task));
+
+//===========formule équivalente=========
+// for (let i = 0; i < tasks.length; i++) {
+//   taskToDom(tasks[i]);
+// }
+//=======================================
 
 //Gestion de l'ajout de tâches avec le bouton add et la touche "Enter"
 function newTask() {
@@ -51,5 +56,4 @@ clear.addEventListener("click", () => {
 });
 
 //Gestion de l'importatioon de tâches
-
 load.addEventListener("click", () => {});
